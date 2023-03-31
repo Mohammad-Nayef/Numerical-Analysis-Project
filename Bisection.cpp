@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 using namespace std;
 
 //This is the given function f(x)
@@ -15,7 +16,8 @@ int main() {
 		iterations++;
 
 		c = (a + b) / 2;
-		if (abs(f(c)) < E)
+
+		if (fabs(f(c)) < E)
 			break;
 
 		if (f(a) * f(c) < 0)
